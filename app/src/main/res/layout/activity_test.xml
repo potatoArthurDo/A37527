@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true"
+    tools:context=".TestActivity">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/pBar"
+        android:layout_marginTop="10dp"
+        android:padding="13dp"
+        android:progressTint="@color/white"
+        android:max="5"
+        android:progress="3"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/question"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pBar"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/op1"
+        android:background="@drawable/general_button"
+        android:text="@string/Vocab"
+        android:textColor="@color/primary_blue"
+        app:layout_constraintTop_toBottomOf="@id/question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/op2"
+        android:text="@string/Vocab"
+        android:background="@drawable/general_button"
+        android:textColor="@color/primary_blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/op1"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/op3"
+        android:text="@string/Vocab"
+        android:background="@drawable/general_button"
+        android:textColor="@color/primary_blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/op2"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/op4"
+        android:text="@string/Vocab"
+        android:background="@drawable/general_button"
+        android:textColor="@color/primary_blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/op3"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
